@@ -13,9 +13,9 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v4
       - name: Install Htmllint
-        run: npm install --save-dev Htmllint
+        run: npm install --save-dev htmlhint
       - name: Lint html files
-        run: npx htmllint "**/*.html"
+        run: npx htmlhint "**/*.html"
       - name: Install stylelint
         run: npm install --save-dev stylelint
       - name: Lint style files
